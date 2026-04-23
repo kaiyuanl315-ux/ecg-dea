@@ -1,6 +1,4 @@
-# ECG-DEA Main Cohort Public Release
 
-This folder is the final SCI submission-ready public package for the **main cohort minimal reproducible workflow**.
 
 ## Scope
 - Main-cohort data processing
