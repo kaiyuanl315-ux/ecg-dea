@@ -54,3 +54,43 @@ python src/prepare_auroc_evaluation_inputs.py --pred_dir data --table_csv data/e
 # 4) Run AUROC evaluation notebook:
 # notebooks/note/evaluate_main_cohort_auroc.ipynb
 ```
+## Data Citation
+If you use this workflow, please cite the MIMIC-IV-ECG dataset:
+
+```bibtex
+@article{PhysioNet-mimic-iv-ecg-1.0,
+  author = {Gow, Brian and Pollard, Tom and Nathanson, Larry A and Johnson, Alistair and Moody, Benjamin and Fernandes, Chrystinne and Greenbaum, Nathaniel and Waks, Jonathan W and Eslami, Parastou and Carbonati, Tanner and Chaudhari, Ashish and Herbst, Elizabeth and Moukheiber, Dana and Berkowitz, Seth and Mark, Roger and Horng, Steven},
+  title = {{MIMIC-IV-ECG: Diagnostic Electrocardiogram Matched Subset}},
+  journal = {{PhysioNet}},
+  year = {2023},
+  month = sep,
+  note = {Version 1.0},
+  doi = {10.13026/4nqg-sb35},
+  url = {https://doi.org/10.13026/4nqg-sb35}
+}
+
+@article{PhysioNet-mimiciv-2.2,
+  author = {Johnson, Alistair and Bulgarelli, Lucas and Pollard, Tom and Horng, Steven and Celi, Leo Anthony and Mark, Roger},
+  title = {{MIMIC-IV}},
+  journal = {{PhysioNet}},
+  year = {2023},
+  month = jan,
+  note = {Version 2.2},
+  doi = {10.13026/6mm1-ek67},
+  url = {https://doi.org/10.13026/6mm1-ek67}
+}
+
+
+@article{10.1093/eurheartj/ehaf254,
+    author = {Büscher, Antonius and Plagwitz, Lucas and Yildirim, Kemal and Brix, Tobias J and Neuhaus, Philipp and Bickmann, Lucas and Menke, Amélie F and van Almsick, Vincent F and Pavenstädt, Hermann and Kümpers, Philipp and Heider, Dominik and Varghese, Julian and Eckardt, Lars},
+    title = {Deep Learning Electrocardiogram Model for Risk Stratification of Coronary Revascularization Need in the Emergency Department},
+    journal = {European Heart Journal},
+    pages = {ehaf254},
+    year = {2025},
+    month = {03},
+    issn = {0195-668X},
+    doi = {10.1093/eurheartj/ehaf254},
+    url = {https://doi.org/10.1093/eurheartj/ehaf254},
+    eprint = {https://academic.oup.com/eurheartj/advance-article-pdf/doi/10.1093/eurheartj/ehaf254/62788722/ehaf254.pdf},
+}
+```
