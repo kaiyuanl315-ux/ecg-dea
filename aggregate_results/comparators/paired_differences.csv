@@ -1,0 +1,19 @@
+cohort,reference,comparator,metric,difference_fusion_minus_comparator,ci_lower,ci_upper,interval_type,interpretation
+internal,fusion,clinical_logistic,auroc,0.16952117083625484,0.14430742400147156,0.19535925478873753,unadjusted paired patient bootstrap 95%,secondary model comparison
+internal,fusion,clinical_logistic,average_precision,0.07842428470200322,0.05506459696658897,0.1076828513360052,unadjusted paired patient bootstrap 95%,secondary model comparison
+internal,fusion,clinical_logistic,calibrated_brier,-0.0003866525122770033,-0.000529773237947695,-0.0002471655208413986,unadjusted paired patient bootstrap 95%,secondary model comparison
+internal,fusion,clinical_xgboost,auroc,0.08556610570536705,0.06957553849255158,0.10140931341005419,unadjusted paired patient bootstrap 95%,secondary model comparison
+internal,fusion,clinical_xgboost,average_precision,0.0673026964683936,0.04394267352477544,0.09539050189934455,unadjusted paired patient bootstrap 95%,secondary model comparison
+internal,fusion,clinical_xgboost,calibrated_brier,-0.00032965401595059195,-0.0004554325807135468,-0.000208804925247122,unadjusted paired patient bootstrap 95%,secondary model comparison
+internal,fusion,clinical_ecg_xgboost,auroc,0.04642175840206486,0.03175531167092722,0.06135882602570732,unadjusted paired patient bootstrap 95%,secondary model comparison
+internal,fusion,clinical_ecg_xgboost,average_precision,0.03529186476269991,0.009734725624420668,0.06265242590830289,unadjusted paired patient bootstrap 95%,secondary model comparison
+internal,fusion,clinical_ecg_xgboost,calibrated_brier,-0.00019508246714056154,-0.00031361580446760375,-8.003242854014697e-05,unadjusted paired patient bootstrap 95%,secondary model comparison
+external,fusion,clinical_logistic,auroc,0.060373373626239846,0.05003185068084824,0.07050639815092762,unadjusted paired patient bootstrap 95%,secondary model comparison
+external,fusion,clinical_logistic,average_precision,0.06095942391314895,0.05253669705225129,0.06918119698830463,unadjusted paired patient bootstrap 95%,secondary model comparison
+external,fusion,clinical_logistic,calibrated_brier,-0.0001019180801077376,-0.00020795648390081956,1.158464459862392e-05,unadjusted paired patient bootstrap 95%,secondary model comparison
+external,fusion,clinical_xgboost,auroc,0.06791174910328923,0.058572487220460184,0.0773264243020004,unadjusted paired patient bootstrap 95%,secondary model comparison
+external,fusion,clinical_xgboost,average_precision,0.05400758739214133,0.045988901831499285,0.06314149385100745,unadjusted paired patient bootstrap 95%,secondary model comparison
+external,fusion,clinical_xgboost,calibrated_brier,-0.00014452162898624318,-0.00025255425262302655,-3.206339186801887e-05,unadjusted paired patient bootstrap 95%,secondary model comparison
+external,fusion,clinical_ecg_xgboost,auroc,0.0075358017624365115,-0.001799756228501434,0.016046358305597808,unadjusted paired patient bootstrap 95%,secondary model comparison
+external,fusion,clinical_ecg_xgboost,average_precision,0.04904415614943569,0.04125454659124277,0.05755989190592757,unadjusted paired patient bootstrap 95%,secondary model comparison
+external,fusion,clinical_ecg_xgboost,calibrated_brier,-6.403732418290217e-05,-0.0001725463564511582,4.656736788761864e-05,unadjusted paired patient bootstrap 95%,secondary model comparison
