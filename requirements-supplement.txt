@@ -1,0 +1,6 @@
+# Additional direct imports for the scientific source supplement.
+# This is not a pinned, end-to-end validated environment.
+-r requirements.txt
+joblib
+xgboost
+neurokit2

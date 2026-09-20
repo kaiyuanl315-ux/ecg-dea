@@ -1,10 +1,20 @@
+# ECG based early mortality risk analysis
 
+This repository provides a research workflow for ECG-based mortality risk analysis. The original release contains main-cohort processing, multimodal model training, AUROC evaluation and ten pretrained ensemble checkpoints.
 
-## Scope
+The September 2026 supplement adds source snapshots and aggregate results for calibration, threshold and alert analyses, mortality comparators, clinical phenotypes, subsequent care, focused exploratory analyses and integrated gradients. Start with [Reproducibility and source scope](REPRODUCIBILITY.md), [aggregate results](aggregate_results/README.md), and [data access](DATA_ACCESS.md).
+
+The added scripts retain historical research dependencies and require restricted inputs and private provenance/QC records. They are inspectable scientific source snapshots, not a standalone or newly validated full-study pipeline. Some statistical scripts use prepared external-cohort predictions; external-cohort data processing and waveform-to-score reconstruction remain outside this public release.
+
+`SOURCE_MANIFEST.json` records source hashes and transformations. `requirements-supplement.txt` lists extra direct Python dependencies. The original scripts and ten checkpoints remain unchanged. See [license and attribution status](THIRD_PARTY_NOTICES.md) before reuse.
+
+The manuscript's additional analyses identify MIMIC-IV v3.0, MIMIC-IV-ED v2.2 and MIMIC-IV-ECG v1.0. The MIMIC-IV v2.2 reference retained below is part of the historical release; it is not the version specification for the current supplemental analyses.
+
+## Original main-cohort workflow
 - Main-cohort data processing
 - Main model training
 - AUROC-oriented evaluation
-- External validation is intentionally excluded
+- External-cohort data preparation and waveform-to-score reconstruction are excluded from the original public workflow.
 
 ## Included Files
 - `model/` (pretrained model folder)
@@ -54,7 +64,7 @@ python src/prepare_auroc_evaluation_inputs.py --pred_dir data --table_csv data/e
 # 4) Run AUROC evaluation notebook:
 # notebooks/note/evaluate_main_cohort_auroc.ipynb
 ```
-## Data Citation
+## Original release citations
 If you use this workflow, please cite the MIMIC-IV-ECG dataset:
 
 ```bibtex
@@ -94,3 +104,4 @@ If you use this workflow, please cite the MIMIC-IV-ECG dataset:
     eprint = {https://academic.oup.com/eurheartj/advance-article-pdf/doi/10.1093/eurheartj/ehaf254/62788722/ehaf254.pdf},
 }
 ```
+
