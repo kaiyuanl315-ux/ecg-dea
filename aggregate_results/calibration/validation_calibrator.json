@@ -1,0 +1,47 @@
+{
+  "model": {
+    "intercept": -4.576408609795004,
+    "slope": 2.9497777308845006,
+    "coefficient_ci95_cluster_robust": [
+      [
+        -4.797928514728943,
+        -4.3548887048610645
+      ],
+      [
+        2.5886396525760023,
+        3.310915809192999
+      ]
+    ],
+    "fit_n": 17889,
+    "fit_events": 145,
+    "fit_patients": 9796,
+    "clip_epsilon": 1e-08,
+    "formula": "expit(intercept + slope * logit(clip(raw_score)))",
+    "fitted_on": "internal_validation_only",
+    "fit_weights": "none",
+    "regularization": "none",
+    "converged": true
+  },
+  "thresholds_raw": {
+    "low": 0.456303122639656,
+    "high": 0.6162797212600708
+  },
+  "thresholds_calibrated": {
+    "low": 0.006100219750630625,
+    "high": 0.03996974708927296
+  },
+  "validation_bin_edges": [
+    0.0,
+    0.1338507563620805,
+    0.1819882136583328,
+    0.22768356263637538,
+    0.27316781133413315,
+    0.3169072508811951,
+    0.36583569169044494,
+    0.4185954880714416,
+    0.48265295743942266,
+    0.5635710269212724,
+    1.0
+  ],
+  "external_or_internal_test_used_to_fit_or_select": false
+}
