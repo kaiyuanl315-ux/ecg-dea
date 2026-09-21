@@ -1,0 +1,34 @@
+# Operating system and editor files
+.DS_Store
+._*
+~$*
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv*/
+
+# Credentials and local environment
+.env
+.env.*
+*.pem
+*.key
+
+# Research inputs and individual-level derived outputs
+/data/
+/data_raw/
+/output/
+**/derived/
+**/data_exports/
+*private*
+sample_metadata.csv
+*.npz
+*.npy
+*.parquet
+*.pkl
+*.pickle
+*.joblib
+*.csv.gz
+*.ckpt
+
+# The ten already tracked public checkpoints remain tracked.
+# Add future files through the explicit reviewed manifest.
